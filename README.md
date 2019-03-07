@@ -33,3 +33,15 @@ Ezt követően már nem szükséges expliciten megadni a kívánt devizanemeket:
 ```bash
 bean-price fokonyv.beancount
 ```
+
+## Megjegyzések
+Ünnepnapokon és hétvégén nincsenek hivatalos középárfolyamok. 
+
+Ha ekkor is szeretnénk árfolyamokhoz jutni, akkor a beancount lehetőséget ad fallback adatforrás megadására is:
+
+```
+1970-01-01 commodity EUR
+  price: "HUF:beancount_mnb/EUR,yahoo/EURHUF=X"
+1970-01-01 commodity USD
+  price: "HUF:beancount_mnb/USD"
+```
