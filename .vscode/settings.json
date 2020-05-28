@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.pytest_cache/": true,
+        "**/__pycache__/": true,
+        "**/.mypy_cache/": true,
+    },
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file", "${workspaceFolder}/mypy.ini",
+        "--follow-imports", "skip", // enélkül minden fájlt megvizsgál, nem csak az aktuálisat
+        "--show-column-numbers"
+    ],	
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+}
