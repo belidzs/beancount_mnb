@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="beancount_mnb",
-    version="1.0.1-rc0",
+    version="1.0.1-rc1",
     description="Az MNB hivatalos középárfolyamainak letöltését megvalósító beancount plugin.",
     long_description=long_description,
     long_description_content_type='text/markdown',
