@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -rf dist/ && python setup.py sdist bdist_wheel && twine upload dist/*
+rm -rf dist/ build/ beancount_mnb.egg-info/ && python setup.py sdist bdist_wheel && twine upload dist/*

@@ -5,7 +5,7 @@ from datetime import datetime
 from zeep import Client
 from lxml import etree
 
-__version__ = '1.0.1-rc0'
+__version__ = '1.0.1-rc1'
 
 
 class Source(source.Source):
